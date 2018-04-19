@@ -31,14 +31,6 @@
 TOKEN=
 ### END OF SETTINGS ###
 
-## TODO
-# - a nice README
-# - settings to decide wether to convert stickers to png or leave in webp
-# - a token checker which will tell the user if something's wrong with it
-# - cli flags like help or to specify the output directory
-# - make it quiet? and use a flag for verbosity
-# - [your feature here]
-
 # Don't edit anything below this line if you don't know what you are doing!
 
 
