@@ -24,10 +24,9 @@ In order to get the stickerpack URL, do the following (using TDesktop):
 
 ### Dependencies
  - [bash](https://www.gnu.org/software/bash/) or something compatible ([zsh](https://www.zsh.org/))
- - [curl](https://curl.haxx.se/), [wget](https://www.gnu.org/software/wget/) (for http requests)
+ - [curl](https://curl.haxx.se/) (for http requests)
  - [ffmpeg](https://ffmpeg.org/) (for convertation to png)
  - [jq](https://stedolan.github.io/jq/) (!) (for json parsing)
- - [sed](https://www.gnu.org/software/sed/) (for parsing parsed json)
 
 ### Setup
 You need to get a bot token. Go talk to https://t.me/BotFather, write
