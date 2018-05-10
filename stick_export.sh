@@ -19,10 +19,9 @@
 
 ## Dependencies
 # - bash or something compatible
-# - curl, wget (for http requests)
+# - curl (for http requests)
 # - ffmpeg (for convertation to png)
 # - jq (!) (for json parsing)
-# - sed (for parsing parsed json)
 
 ### SETTINGS ###
 # You need to get a bot token. Go talk to https://t.me/BotFather, write
@@ -54,10 +53,10 @@ mkdir -p $s/webp
 mkdir -p $s/png
 for i in `curl https://api.telegram.org/bot$TOKEN/getStickerset -F "name=$s" | jq '(.result.stickers)[].file_id'`; do
         echo_yel "Getting filepath for $i..."
-        filepath=$(echo "https://api.telegram.org/file/bot$TOKEN/`curl "https://api.telegram.org/bot$TOKEN/getFile" -F file_id="$i" | jq .result.file_path`" | sed -e 's/"//g')
+        filepath=$(echo "https://api.telegram.org/file/bot$TOKEN/`curl "https://api.telegram.org/bot$TOKEN/getFile" -F file_id="$i" | jq -r .result.file_path`")
         filename="${filepath##*/}"
         echo_yel "Downloading $filepath..."
-        wget $filepath
+        curl $filepath -o $filename
         ffmpeg -i $filename $filename.png
         mv $filename $s/webp/
         mv $filename.png $s/png/
