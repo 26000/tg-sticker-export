@@ -45,6 +45,3 @@ Pull requests are welcome!
 
 ### Authors
 [26000](https://github.com/26000)
-
-### Inspiration
-I'm moving to [Matrix](https://matrix.org) from Telegram. It's better, *much* better. Thanks to Matrix and Riot developers! And to my girlfriend, my first contact in Matrix.
