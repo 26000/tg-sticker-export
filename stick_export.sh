@@ -27,7 +27,7 @@
 # You need to get a bot token. Go talk to https://t.me/BotFather, write
 # '/newbot' and follow its instructions. Eventually you get a token.
 # You can just wait for something scary to appear in the chat and that is a token.
-TOKEN=
+TOKEN=1200623231:AAHtmhRoB38-0Kn3sA8H1idf3Wg3cXvw1EI
 ### END OF SETTINGS ###
 
 # Don't edit anything below this line if you don't know what you are doing!
@@ -43,7 +43,7 @@ echo_yel() {
 
 if [[ -z $1 ]]
 then
-        echo "Please specify the stickerset name."
+        echo "https://t.me/addstickers/Cat20"
         exit
 fi
 
